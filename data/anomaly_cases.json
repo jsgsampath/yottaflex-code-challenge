@@ -1,0 +1,52 @@
+[
+  {
+    "issue_id":"ANOM-001",
+    "issue_type":"PAYMENT_ALLOCATION_EXCEEDS_PAYMENT",
+    "entity_name":"payment_allocations",
+    "record_id":"PAY-2026-000001",
+    "related_record_id":"ALLOC-00000001",
+    "source_value":5116,
+    "anomalous_value":5117,
+    "expected_outcome":"Detect an allocation greater than its parent payment amount."
+  },
+  {
+    "issue_id":"ANOM-002",
+    "issue_type":"SCHOLARSHIP_EXCEEDS_ELIGIBLE_FEES",
+    "entity_name":"scholarships",
+    "record_id":"SCH-2026-000001",
+    "related_record_id":"INV-2026-007360",
+    "source_value":17933,
+    "anomalous_value":132691,
+    "expected_outcome":"Detect an award greater than the related invoice fees."
+  },
+  {
+    "issue_id":"ANOM-003",
+    "issue_type":"DUPLICATE_INVOICE_GENERATION",
+    "entity_name":"invoices",
+    "record_id":"INV-2026-000001",
+    "related_record_id":"ENR-000001",
+    "source_value":1,
+    "anomalous_value":2,
+    "expected_outcome":"Detect two invoices generated for the same enrollment."
+  },
+  {
+    "issue_id":"ANOM-004",
+    "issue_type":"REFUND_EXCEEDS_NET_PAID",
+    "entity_name":"refunds",
+    "record_id":"PAY-2026-000001",
+    "related_record_id":"INV-2026-012598",
+    "source_value":5116,
+    "anomalous_value":5117,
+    "expected_outcome":"Detect a refund greater than the payment's net amount allocated."
+  },
+  {
+    "issue_id":"ANOM-005",
+    "issue_type":"BALANCE_DISAGREES_WITH_LEDGER",
+    "entity_name":"student_balances",
+    "record_id":"STU-000001",
+    "related_record_id":"STU-000001",
+    "source_value":258538,
+    "anomalous_value":258539,
+    "expected_outcome":"Detect a final balance that differs from its ledger-derived value."
+  }
+]

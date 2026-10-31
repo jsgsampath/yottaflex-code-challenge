@@ -1,0 +1,6 @@
+issue_id,issue_type,entity_name,record_id,related_record_id,source_value,anomalous_value,expected_outcome
+ANOM-001,PAYMENT_ALLOCATION_EXCEEDS_PAYMENT,payment_allocations,PAY-2026-000001,ALLOC-00000001,5116,5117,Detect an allocation greater than its parent payment amount.
+ANOM-002,SCHOLARSHIP_EXCEEDS_ELIGIBLE_FEES,scholarships,SCH-2026-000001,INV-2026-007360,17933,132691,Detect an award greater than the related invoice fees.
+ANOM-003,DUPLICATE_INVOICE_GENERATION,invoices,INV-2026-000001,ENR-000001,1,2,Detect two invoices generated for the same enrollment.
+ANOM-004,REFUND_EXCEEDS_NET_PAID,refunds,PAY-2026-000001,INV-2026-012598,5116,5117,Detect a refund greater than the payment's net amount allocated.
+ANOM-005,BALANCE_DISAGREES_WITH_LEDGER,student_balances,STU-000001,STU-000001,258538,258539,Detect a final balance that differs from its ledger-derived value.

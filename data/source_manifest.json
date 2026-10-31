@@ -1,0 +1,24 @@
+{
+  "dataset_name": "yottaflex-full",
+  "generation_method": "synthetic deterministic generator",
+  "random_seed": 20261022,
+  "generation_date": "2026-10-31",
+  "dataset_version": "1.0.0",
+  "row_counts": {
+    "students": 10000,
+    "programs": 20,
+    "feeschedules": 60,
+    "enrollments": 30000,
+    "invoices": 30000,
+    "invoice_lines": 90000,
+    "eligibility": 10000,
+    "scholarships": 15000,
+    "payments": 50000,
+    "payment_allocations": 50000,
+    "refunds": 1488,
+    "student_balances": 10000,
+    "anomaly_cases": 5,
+    "ground_truth": 2479
+  },
+  "lawful_provenance": "Entirely synthetic data generated for testing and validation only; no real personal information used."
+}
